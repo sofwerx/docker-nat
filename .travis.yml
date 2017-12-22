@@ -5,6 +5,6 @@ branches:
   only:
   - master
 script:
-- docker build --tag ${TRAVIS_REPO_SLUG}:${TRAVIS_BUILD_NUMBER} --tag ${TRAVIS_REPO_SLUG}:latest .
+- docker build --tag sofwerx/nat:${TRAVIS_BUILD_NUMBER} --tag sofwerx/nat:latest .
 after_success:
 - "./push.sh"
